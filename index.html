@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrangementregistrering</title>
+<link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+<body>
+    <h1>Registreringsskjema for deltakere</h1>
+                                                <!-- Ditt skjema her... -->
+    <form id="registreringsskjema" onsubmit="return validerPassord()">
+        <label for="fornavn">Fornavn:</label>
+        <input type="text" id="fornavn" required><br>
+
+        <label for="etternavn">Etternavn:</label>
+        <input type="text" id="etternavn" required><br>
+
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" required><br>
+
+        <label for="postnummer">Postnummer:</label>
+        <input type="text" id="postnummer" required><br>
+
+        <label for="poststed">Poststed:</label>
+        <input type="text" id="poststed" required><br>
+
+        <label for="telefon">Telefon:</label>
+        <input type="text" id="telefon" required><br>
+
+        <label for="passord">Passord:</label>
+        <input type="password" id="passord" required><br>
+
+        <input type="submit" value="Registrer">
+    </form>
+                                            <!-- Opsummering av skjema her... -->
+    <div id="oppsummering">
+        <h2>Oppsummering av registrerte deltakere:</h2>
+        <ul id="deltakereListe"></ul>
+    </div>
+
+    <script defer src="java/java.js"></script>
+</body>
+</html>
+
+
+
+
+
+
